@@ -22,7 +22,7 @@
   "devDependencies": {
     "lodash.isfinite": "^3.3.1",
     "lodash.isfunction": "^3.0.8",
-    "lodash.isnan": "^2.4.1",
+    "lodash.isnan": "^3.0.2",
     "tape": "^3.0.3"
   }
 }
