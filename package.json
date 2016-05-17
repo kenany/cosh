@@ -1,6 +1,6 @@
 {
   "name": "cosh",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Calculate the hyperbolic cosine of a number",
   "keywords": [
     "math"
