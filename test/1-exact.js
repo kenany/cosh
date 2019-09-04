@@ -1,6 +1,7 @@
-var cosh = require('../');
 var test = require('tape');
 var isNaN = require('lodash.isnan');
+
+var cosh = require('../');
 
 test('NaN', function(t) {
   t.plan(1);

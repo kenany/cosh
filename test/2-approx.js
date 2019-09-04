@@ -1,7 +1,8 @@
-var cosh = require('../');
 var test = require('tape');
 var isFinite = require('lodash.isfinite');
 var isNaN = require('lodash.isnan');
+
+var cosh = require('../');
 
 var sloppyTolerance = 100;
 var ENDIAN = 0;
@@ -11,7 +12,11 @@ var u = new Uint32Array(f.buffer);
 function diff(a, b) {
   f[0] = a;
   f[1] = b;
-  return Math.abs((u[3 - ENDIAN] - u[1 - ENDIAN]) * 0x100000000 + u[2 + ENDIAN] - u[0 + ENDIAN]);
+  return Math.abs(
+    (u[3 - ENDIAN] - u[1 - ENDIAN]) * 0x100000000
+    + u[2 + ENDIAN]
+    - u[0 + ENDIAN]
+  );
 }
 
 if (diff(2, 4) === 0x100000) {
