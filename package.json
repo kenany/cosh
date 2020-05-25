@@ -28,6 +28,6 @@
     "lodash.isfinite": "3.3.2",
     "lodash.isfunction": "3.0.9",
     "lodash.isnan": "3.0.2",
-    "tape": "4.13.2"
+    "tape": "4.13.3"
   }
 }
