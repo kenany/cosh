@@ -8,6 +8,9 @@
   "repository": "KenanY/cosh",
   "license": "MIT",
   "author": "Kenan Yildirim <kenan@kenany.me> (http://kenany.me/)",
+  "engines": {
+    "node": "10 || 12 || >=14"
+  },
   "main": "index.js",
   "files": [
     "index.js",
