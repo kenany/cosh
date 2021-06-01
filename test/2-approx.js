@@ -1,13 +1,13 @@
-var test = require('tape');
-var isFinite = require('lodash.isfinite');
-var isNaN = require('lodash.isnan');
+const test = require('tape');
+const isFinite = require('lodash.isfinite');
+const isNaN = require('lodash.isnan');
 
-var cosh = require('../');
+const cosh = require('../');
 
-var sloppyTolerance = 100;
-var ENDIAN = 0;
-var f = new Float64Array([0, 0]);
-var u = new Uint32Array(f.buffer);
+const sloppyTolerance = 100;
+let ENDIAN = 0;
+const f = new Float64Array([0, 0]);
+const u = new Uint32Array(f.buffer);
 
 function diff(a, b) {
   f[0] = a;
@@ -38,8 +38,8 @@ function nearEqual(a, b, tolerance) {
     }
   }
 
-  var target = b === 0 ? a * 0 : b;
-  var err = diff(a, target);
+  const target = b === 0 ? a * 0 : b;
+  const err = diff(a, target);
 
   if (err > tolerance) {
     return false;
@@ -69,7 +69,8 @@ test('1e-30', function(t) {
 });
 
 test('approximations', function(t) {
-  var FIXTURES = [
+  /* eslint-disable no-loss-of-precision */
+  const FIXTURES = [
     [0.0016914556651292944, 1.0000014305114746],
     [0.001953124689559275, 1.0000019073486328],
     [0.003782208044661295, 1.000007152557373],
@@ -332,6 +333,7 @@ test('approximations', function(t) {
     [27.989721778208146, 715734122496],
     [28.953212876533797, 1875817529343.9976]
   ];
+  /* eslint-enable no-loss-of-precision */
 
   t.plan(FIXTURES.length);
 
