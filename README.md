@@ -5,7 +5,7 @@ Calculate the hyperbolic cosine of a number.
 ## Example
 
 ``` javascript
-var cosh = require('cosh');
+const cosh = require('cosh');
 
 cosh(1);
 // => 1.5430806348152437
@@ -20,7 +20,7 @@ $ npm install cosh
 ## API
 
 ``` javascript
-var cosh = require('cosh');
+const cosh = require('cosh');
 ```
 
 ### `cosh(x)`
