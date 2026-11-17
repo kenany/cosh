@@ -4,7 +4,7 @@ Calculate the hyperbolic cosine of a number.
 
 ## Example
 
-``` javascript
+```javascript
 import { cosh } from 'cosh';
 
 cosh(1);
@@ -13,13 +13,13 @@ cosh(1);
 
 ## Installation
 
-``` bash
+```bash
 $ npm install cosh
 ```
 
 ## API
 
-``` javascript
+```javascript
 import { cosh } from 'cosh';
 ```
 
